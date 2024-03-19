@@ -1,0 +1,28 @@
+.logo img {
+  max-width: 19vw;
+}
+
+.title h1 {
+  font-size: clamp(1.125rem, 2vw, 3rem);
+}
+
+.title h1 .sub-text-1 {
+  font-size: clamp(1.65rem, 3vw, 3rem);
+  letter-spacing: 1.2px;
+}
+
+.title h1 .sub-text-2 {
+  font-size: clamp(4.35rem, 8vw, 7.5rem);
+  letter-spacing: 1.2px;
+  text-shadow: 2px 2px 0 rgb(var(--main-yellow)), -2px 2px 0 rgb(var(--main-yellow)), -2px -2px 0 rgb(var(--main-yellow)), 2px -2px 0 rgb(var(--main-yellow));
+  color: #fff;
+}
+
+.cinta {
+  background-color: rgb(var(--footer-blue));
+  margin: 0 -1.5rem;
+}
+
+footer {
+  margin: 0 -1.5rem;
+}
