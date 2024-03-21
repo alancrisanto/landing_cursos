@@ -1,57 +1,100 @@
-  /* ---------------------------------------
+/* Blue effect for all images with lazy load atributte */
+
+.pulse {
+  animation: blurEffect 2.5s ease-in infinite;
+}
+
+@keyframes blurEffect {
+  0% {
+    opacity: 0.6;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.6;
+  }
+}
+
+/* ---------------------------------------
   HEADER
   ------------------------------------------ */
 
-  .container-header {
-    max-width: 960px;
-    margin: 0 auto;
-  }
+.container-header {
+  max-width: 960px;
+  margin: 0 auto;
+}
 
-  .title h1 {
-    font-size: clamp(1.125rem, 5.5vw, 1.5rem);
-  }
+.title h1 {
+  font-size: clamp(1.125rem, 5.5vw, 1.5rem);
+}
 
-  .title h1 .sub-text-1 {
-    font-size: clamp(1.65rem, 8vw, 2.25rem);
-    letter-spacing: 1.2px;
-  }
+.title h1 .sub-text-1 {
+  font-size: clamp(1.65rem, 8vw, 2.25rem);
+  letter-spacing: 1.2px;
+}
 
-  .title h1 .sub-text-2 {
-    font-size: clamp(4.35rem, 23vw, 6rem);
-    letter-spacing: 1.2px;
-    text-shadow: 2px 2px 0 rgb(var(--main-yellow)), -2px 2px 0 rgb(var(--main-yellow)), -2px -2px 0 rgb(var(--main-yellow)), 2px -2px 0 rgb(var(--main-yellow));
-    color: #fff;
-  }
+.title h1 .sub-text-2 {
+  font-size: clamp(4.35rem, 23vw, 6rem);
+  letter-spacing: 1.2px;
+  text-shadow: 2px 2px 0 rgb(var(--main-yellow)), -2px 2px 0 rgb(var(--main-yellow)), -2px -2px 0 rgb(var(--main-yellow)), 2px -2px 0 rgb(var(--main-yellow));
+  color: #fff;
+}
 
-  /* .img-header picture img {
+/* .img-header picture img {
     max-width: 300px;
   } */
 
-  .cinta {
-    background-color: rgb(var(--blue-card));
-    margin: 0 -1rem;
-  }
+.cinta {
+  background-color: rgb(var(--blue-card));
+  margin: 0 -1rem;
+}
 
-  /* ---------------------------------------
+/* ---------------------------------------
   CARDS
   ------------------------------------------ */
-  .card-body {
-    background-color: rgb(var(--blue-card));
-  }
 
-  /* ---------------------------------------
+.card {
+  overflow: hidden;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+  transition: transform 0.5s;
+}
+
+.card-body {
+  background-color: rgb(var(--blue-card));
+}
+
+.card-img-top {
+  aspect-ratio: 1.9;
+  object-fit: cover;
+}
+
+.btn-info:hover {
+  /* animation: slide-top 0.4s linear both; */
+  background-color: rgb(var(--blue)) !important;
+  box-shadow: 0 10px 20px rgba(133, 133, 133, 0.5);
+  transform: translateY(-4px);
+  transition: transform 0.5s;
+}
+
+/* ---------------------------------------
   FORM SECTION
   ------------------------------------------ */
 
-  .form-section {
-    background-color: rgb(var(--blue-card));
-    margin: 0 -1rem;
-  }
+.form-section {
+  background-color: rgb(var(--blue-card));
+  margin: 0 -1rem;
+}
 
-  /* ---------------------------------------
+/* ---------------------------------------
   FOOTER
   ------------------------------------------ */
 
-  footer {
-    margin: 0 -1rem;
-  }
+footer {
+  margin: 0 -1rem;
+}
