@@ -1,0 +1,320 @@
+/* Formulario */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.body-1-form {
+  margin-top: 2rem;
+  background-color: white;
+  padding: 1rem;
+  background-color: #f3f3f3;
+  /* box-shadow: 0 5px 15px 0 #00000026; */
+}
+
+.body-1-form h4,
+.body-1-form p {
+  text-align: center;
+}
+
+.body-1-form h4 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.35;
+}
+
+.body-1-form h4 span {
+  color: #00027b;
+  font-weight: 700;
+  font-size: 1.65rem;
+}
+
+.form-group-container {
+  margin: 1.5rem 0;
+}
+
+.section-input {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  margin: 0.85rem 0;
+  padding: 0.65rem;
+  max-height: 45px;
+  border: 1px solid #cacaca;
+}
+
+.section-input input {
+  margin-right: 0.5rem;
+  max-width: 85%;
+  font-size: clamp(0.75rem, 1.2vw, 0.9rem);
+}
+
+.section-input input:focus,
+.section-input select:focus {
+  border: 0px solid transparent;
+  outline: none;
+}
+
+.section-input input,
+.section-input select {
+  border: 0px solid transparent;
+  flex: 1;
+  background-color: transparent;
+}
+
+.section-input input::placeholder,
+.section-input select {
+  font-size: clamp(0.75rem, 1.2vw, 0.9rem);
+}
+
+.section-select,
+.section-select option {
+  color: black;
+  max-width: 100%;
+}
+
+.section-select:invalid,
+.section-select option[value=""] {
+  color: rgb(var(--dark-grey));
+}
+
+#phone {
+  max-width: 65%;
+}
+
+/* -- EStilos banderas teléfono */
+.input-phone {
+  position: relative;
+}
+
+.input-phone input:focus {
+  border: 0.1rem solid var(--main-yellow);
+}
+
+.selected-option {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  flex-grow: 1;
+}
+
+.selected-option div {
+  display: flex;
+  gap: 5px;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  margin-right: 5px;
+  min-width: 2rem;
+}
+
+.selected-option div svg:last-child {
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
+}
+
+.selected-option div.active svg:last-child {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
+.input-phone .options {
+  position: absolute;
+  top: 3.5rem;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  display: none;
+  border: 1px solid rgb(var(--middle-grey));
+  z-index: 1;
+}
+
+.input-phone .options.active {
+  display: block;
+}
+
+.input-phone .options::before {
+  position: absolute;
+  content: "";
+  left: 1rem;
+  top: -1.2rem;
+  width: 0;
+  height: 0;
+  border: 0.6rem solid transparent;
+  border-bottom-color: var(--primary);
+}
+
+input.search-box {
+  border-radius: 0.5rem 0.5rem 0 0;
+  padding: 1rem;
+  max-width: 100% !important;
+  width: 100%;
+  margin: 0 !important;
+}
+
+.input-phone ol {
+  list-style: none;
+  max-height: 23rem;
+  overflow: overlay;
+  border-top: 1px solid rgb(var(--middle-grey));
+}
+
+.input-phone ol::-webkit-scrollbar {
+  width: 0.6rem;
+}
+
+.input-phone ol::-webkit-scrollbar-thumb {
+  width: 0.4rem;
+  height: 3rem;
+  background-color: #ccc;
+  border-radius: 0.4rem;
+}
+
+.input-phone ol li {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.input-phone ol li.hide {
+  display: none;
+}
+
+.input-phone ol li:not(:last-child) {
+  border-bottom: 0.1rem solid #eee;
+}
+
+.input-phone ol li:hover {
+  background-color: lightcyan;
+}
+
+.input-phone ol li .country-name {
+  margin-left: 0.4rem;
+}
+
+/* Fin Estilos banderas teléfono */
+
+/* condiciones */
+.condiciones {
+  font-size: 0.8rem;
+}
+
+.section-6-terminos {
+  max-height: 80px;
+  overflow-y: scroll;
+  -ms-scrollbar-width: auto;
+  scrollbar-width: auto;
+}
+
+.terminosCondiciones p,
+.terminosCondiciones span {
+  text-align: left;
+  font-size: 0.625rem;
+}
+
+/* condiciones */
+.condiciones {
+  font-size: 0.8rem;
+  text-align: left;
+}
+
+/* botón */
+.form-btn-becas {
+  border: 0;
+  color: white;
+  background-color: #07152f;
+  /* border-radius: 8px; */
+  padding: 0.5rem 1rem;
+  font-size: clamp(1rem, 1.2vw, 1.5rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 1.5rem auto;
+  width: 85%;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.form-btn-becas:hover {
+  color: #ffffff;
+  transform: scale(1.05);
+  outline: 2px solid #ffffff;
+  box-shadow: 4px 5px 17px -4px #07152f;
+}
+
+.form-btn-becas::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #fbc009;
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 600ms;
+}
+
+.form-btn-becas:hover::before {
+  width: 250%;
+}
+
+@media screen and (min-width: 375px) {
+
+  /* -- ###  CONTAINER SECTION 6  */
+  .section-input input,
+  #phone {
+    max-width: 100%;
+  }
+
+  /* -- ### FIN CONTAINER SECTION 6  */
+}
+
+@media only screen and (min-width: 768px) {
+  .body-1-form {
+    margin: 0 auto;
+    max-width: 550px !important;
+  }
+
+
+
+  #pais,
+  #estudios {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+
+  .form-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .section-input {
+    margin: 0.86rem 0 0 0;
+  }
+
+  .form-group-container {
+    padding: 0 1rem;
+  }
+
+  .condiciones {
+    padding: 0 1rem;
+  }
+
+  .section-input input,
+  #phone {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .body-1-form {
+    align-items: center;
+  }
+}

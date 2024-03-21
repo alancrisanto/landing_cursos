@@ -7,7 +7,7 @@
   --dark-blue: 34, 44, 63;
   --footer-blue: 4, 27, 51;
   --light-blue: 122, 193, 254;
-  --blue-card: 30, 82, 116;
+  --blue-card: 34, 44, 63, 1;
   --blue-subMenu: 229, 235, 248;
   --main-yellow: 251, 192, 9;
   --dark-yellow: 244, 163, 32;
@@ -28,7 +28,7 @@
 
 
 body {
-  color: rgba(var(--dark-blue), 1) !important;
+  color: rgba(var(--dark-blue), 1);
   max-width: 2200px;
   margin: 0 auto !important;
 }
@@ -78,6 +78,13 @@ footer {
 
 select {
   max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+p {
+  color: rgb(var(--footer-blue));
 }
 
 p strong {

@@ -1,28 +1,57 @@
-.logo img {
-  max-width: 19vw;
-}
+  /* ---------------------------------------
+  HEADER
+  ------------------------------------------ */
 
-.title h1 {
-  font-size: clamp(1.125rem, 2vw, 3rem);
-}
+  .container-header {
+    max-width: 960px;
+    margin: 0 auto;
+  }
 
-.title h1 .sub-text-1 {
-  font-size: clamp(1.65rem, 3vw, 3rem);
-  letter-spacing: 1.2px;
-}
+  .title h1 {
+    font-size: clamp(1.125rem, 5.5vw, 1.5rem);
+  }
 
-.title h1 .sub-text-2 {
-  font-size: clamp(4.35rem, 8vw, 7.5rem);
-  letter-spacing: 1.2px;
-  text-shadow: 2px 2px 0 rgb(var(--main-yellow)), -2px 2px 0 rgb(var(--main-yellow)), -2px -2px 0 rgb(var(--main-yellow)), 2px -2px 0 rgb(var(--main-yellow));
-  color: #fff;
-}
+  .title h1 .sub-text-1 {
+    font-size: clamp(1.65rem, 8vw, 2.25rem);
+    letter-spacing: 1.2px;
+  }
 
-.cinta {
-  background-color: rgb(var(--footer-blue));
-  margin: 0 -1.5rem;
-}
+  .title h1 .sub-text-2 {
+    font-size: clamp(4.35rem, 23vw, 6rem);
+    letter-spacing: 1.2px;
+    text-shadow: 2px 2px 0 rgb(var(--main-yellow)), -2px 2px 0 rgb(var(--main-yellow)), -2px -2px 0 rgb(var(--main-yellow)), 2px -2px 0 rgb(var(--main-yellow));
+    color: #fff;
+  }
 
-footer {
-  margin: 0 -1.5rem;
-}
+  /* .img-header picture img {
+    max-width: 300px;
+  } */
+
+  .cinta {
+    background-color: rgb(var(--blue-card));
+    margin: 0 -1rem;
+  }
+
+  /* ---------------------------------------
+  CARDS
+  ------------------------------------------ */
+  .card-body {
+    background-color: rgb(var(--blue-card));
+  }
+
+  /* ---------------------------------------
+  FORM SECTION
+  ------------------------------------------ */
+
+  .form-section {
+    background-color: rgb(var(--blue-card));
+    margin: 0 -1rem;
+  }
+
+  /* ---------------------------------------
+  FOOTER
+  ------------------------------------------ */
+
+  footer {
+    margin: 0 -1rem;
+  }
