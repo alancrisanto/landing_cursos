@@ -85,7 +85,7 @@ const templateCard = function (lst) {
 									</div>
 									<div class="border-bottom border-warning mb-3"></div>
 									<div>
-										<a href="${el.link}" class="btn btn-warning rounded-pill text-white fw-medium btn-info">Solicitar Información</a>
+										<a href="${el.link}" class="btn btn-warning rounded-pill text-white fw-medium btn-info" data-curso="${el.title}">Solicitar Información</a>
 									</div>
 								</div>
 							</div>
@@ -96,6 +96,7 @@ const templateCard = function (lst) {
 cardsContainer.innerHTML = templateCard(cards).join("");
 
 // ----------------------------------------------------------------------------------------------------------------------------------
+
 // Mantener esta variable despues del templateCard para poder cargar las imágenes
 const images = document.querySelectorAll(".img-lazy");
 // LAZY LOADING
@@ -124,3 +125,35 @@ images.forEach((image) => {
 });
 
 // ----------------------------------------------------------------------------------------------------------------------------------
+
+// Seleecionar curso al hacer click en tarjeta de cursos
+
+document.addEventListener("DOMContentLoaded", function () {
+	// Obtener referencia a los elementos del DOM
+	const enlacesCurso = document.querySelectorAll(".btn-info");
+	const selectCurso = document.querySelector("#selectCurso");
+
+	// Función para manejar el clic en los enlaces de los cursos
+	function handleCursoClick(event) {
+		event.preventDefault(); // Evitar que el enlace redireccione inmediatamente
+
+		// Obtener el nombre del curso del atributo data-curso del enlace
+		const nombreCurso = this.getAttribute("data-curso");
+
+		// Buscar la opción correspondiente al nombre del curso y seleccionarla
+		for (let i = 0; i < selectCurso.options.length; i++) {
+			if (selectCurso.options[i].text === nombreCurso) {
+				selectCurso.selectedIndex = i;
+				break;
+			}
+		}
+
+		// Redirigir al usuario al formulario
+		window.location.href = "#formulario-becas";
+	}
+
+	// Escuchar evento de clic en cada enlace de curso
+	enlacesCurso.forEach(function (enlace) {
+		enlace.addEventListener("click", handleCursoClick);
+	});
+});

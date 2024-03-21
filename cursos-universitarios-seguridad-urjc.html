@@ -94,7 +94,7 @@
       <div class="cards-section">
         <div class="cards-title text-center">
           <h3 class="fs-1 fw-bold">Cursos Universitarios</h3>
-          <p class="fs-5 fst-italic fw-semibold">Inicio 1 de junio 2024 - 6 Créditos ECTS</p>
+          <p class="fs-5 fst-italic fw-semibold">Inicio 1 de junio 2024 - 2 Créditos ECTS</p>
         </div>
 
         <!-- Cards -->
@@ -283,81 +283,52 @@
                     </div>
                     <!-- Teléfono -->
                     <div class="section-input input-phone ">
-                      <div class="selected-option">
-                        <div>
-                          <span class="iconify" data-icon="flag:es-4x3"></span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-chevron-down" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                              d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
-                          </svg>
-                          <!-- <strong>+44</strong> -->
-                        </div>
-                        <input class="input-form" type="tel" id="phone" name="tel" minlength="5" maxlength="20"
-                          pattern="\+\d{2} [0-9]{4,12}" value="+34 " placeholder="Número de Teléfono" required>
-
-                      </div>
+                      <input class="input-form" type="tel" id="phone" name="tel" minlength="5" maxlength="20"
+                        pattern="\+\d{2} [0-9]{4,12}" placeholder="+34 111 111 111" required>
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#072247"
                         class="bi bi-telephone-fill" viewBox="0 0 16 16">
                         <path fill-rule="evenodd"
                           d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
                       </svg>
-                      <div class="options">
-                        <input type="text" class="search-box" placeholder="Busca País Por Nombre">
-                        <ol>
-                          <!-- Lista generada por js -->
-                        </ol>
-                      </div>
                     </div>
                   </div>
-                  <div class="form-group">
-                    <!-- Países -->
-                    <div class="section-input">
-                      <select class="section-select input-form" name="pais" id="pais" title="paises">
-                        <option value="" selected disabled>Pais</option>
-                        <!-- Lista de países generado dinámicamente paises.json -->
-                      </select>
-                    </div>
-                    <!-- Nivel de Estudios -->
-                    <div class="section-input">
-                      <select class="section-select input-form" name="estudios" id="estudios" title="nivel de estudios">
-                        <option value="" class="select-placeholder" selected disabled>Nivel de Estudios</option>
-                        <option value="na">Sin Estudios</option>
-                        <option value="escolar">Graduado Escolar o Similar</option>
-                        <option value="eso">ESO</option>
-                        <option value="fp1">FP1</option>
-                        <option value="fp2">FP2</option>
-                        <option value="medfp">Grado Medio FP</option>
-                        <option value="bachillerato">Bachillerato</option>
-                        <option value="prueba">Prueba Para Mayores de 25 años</option>
-                        <option value="diploma">Diplimatura Univesitaria</option>
-                        <option value="grado">Grado Universitario</option>
-                        <option value="licenciatura">Licenciatura Universitaria</option>
-                        <option value="postgrado">Postgrado</option>
-                        <option value="master">Máster</option>
-                        <option value="doctorado">Doctorado</option>
-                      </select>
-                    </div>
+
+                  <!-- Nivel de Estudios -->
+                  <div class="section-input">
+                    <select class="section-select input-form" name="estudios" id="estudios" title="nivel de estudios">
+                      <option value="" class="select-placeholder" selected disabled>Nivel de Estudios</option>
+                      <option value="na">Sin Estudios</option>
+                      <option value="escolar">Graduado Escolar o Similar</option>
+                      <option value="eso">ESO</option>
+                      <option value="fp1">FP1</option>
+                      <option value="fp2">FP2</option>
+                      <option value="medfp">Grado Medio FP</option>
+                      <option value="bachillerato">Bachillerato</option>
+                      <option value="prueba">Prueba Para Mayores de 25 años</option>
+                      <option value="diploma">Diplimatura Univesitaria</option>
+                      <option value="grado">Grado Universitario</option>
+                      <option value="licenciatura">Licenciatura Universitaria</option>
+                      <option value="postgrado">Postgrado</option>
+                      <option value="master">Máster</option>
+                      <option value="doctorado">Doctorado</option>
+                    </select>
                   </div>
                   <!-- Maestria a Postular -->
                   <div class="section-input">
-                    <select class="section-select input-form" name="maestria" id="maestria" title="maestría a postular">
-                      <option value="" class="select-placeholder" selected disabled>Maestría a Postular</option>
-                      <option value="Máster en Inteligencia">Máster en Inteligencia</option>
-                      <option value="Máster en criminalística forense">Máster en criminalística forense</option>
-                      <option value="Máster en Criminología y victimología ">Máster en Criminología y victimología
-                      </option>
-                      <option value="Máster en Neurocriminologia y pscicopatologia">Máster en Neurocriminología y
-                        pscicopatología</option>
-                      <option value="Máster en Ciberseguridad análisis e ingeniería ">Máster en Ciberseguridad
-                        análisis e ingeniería </option>
-                      <option value="Máster En Diplomacia, Relaciones Internacionales, Seguridad Y Defensa (DRISYD)">
-                        Máster En Diplomacia, Relaciones Internacionales...
-                      </option>
+                    <select class="section-select input-form" name="curso" id="selectCurso" title="maestría a postular">
+                      <option value="" class="select-placeholder" selected disabled>Curso de Interés</option>
+                      <option value="Infraestructuras Críticas">Infraestructuras Críticas</option>
+                      <option value="Bandas Latinas y Pandillas Juveniles de carácter violento">Bandas Latinas y
+                        Pandillas Juveniles de carácter violento</option>
                       <option
-                        value="Máster Universitario En Derecho Internacional Humanitario Y Su Aplicación Práctica Ante Conflictos">
-                        Máster Universitario En Derecho Internacional Humanitario Y Su Aplicación Práctica Ante
-                        Conflictos</option>
+                        value="Policía Local como Primera Línea de Actuación en la Lucha Contra la Radicalización Islamista">
+                        Policía Local como Primera Línea de Actuación en la Lucha Contra la Radicalización Islamista
+                      </option>
+                      <option value="Análisis de Inteligencia Criminal">Análisis de Inteligencia Criminal</option>
+                      <option value="Fundamentos de Inteligencia">Fundamentos de Inteligencia</option>
+                      <option value="Criminología y Criminalística">Criminología y Criminalística</option>
+                      <option value="Víctimas Vulnerables: Delitos de Odio">Víctimas Vulnerables: Delitos de Odio
+                      </option>
                     </select>
                   </div>
                   <div>
@@ -1031,10 +1002,6 @@
     </footer>
   </div>
   <script src="js/index.js"></script>
-  <!-- Icons Flags -->
-  <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
-  <script src="js/form.js" type="module"></script>
-  <script src="js/services.js" type="module"></script>
 </body>
 
 </html>
