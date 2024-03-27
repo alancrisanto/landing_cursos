@@ -23,7 +23,7 @@
   ------------------------------------------ */
 
 .container-header {
-  max-width: 960px;
+  max-width: 1360px;
   margin: 0 auto;
 }
 
@@ -88,7 +88,11 @@
 
 .form-section {
   background-color: rgb(var(--blue-card));
-  margin: 0 -1rem;
+  margin: 0 -2rem;
+}
+
+.facebook a:hover svg {
+  fill: rgb(var(--blue));
 }
 
 /* ---------------------------------------
@@ -97,4 +101,19 @@
 
 footer {
   margin: 0 -1rem;
+}
+
+
+@media screen and (min-width:1024px) {
+  .title h1 {
+    font-size: clamp(1.125rem, 5.5vw, 2rem);
+  }
+
+  .title h1 .sub-text-1 {
+    font-size: clamp(1.65rem, 8vw, 3rem);
+  }
+
+  .title h1 .sub-text-2 {
+    font-size: clamp(4.35rem, 23vw, 8rem);
+  }
 }
