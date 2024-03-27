@@ -996,11 +996,15 @@
         <p class="text-white fw-medium text-lg-center ">
           <a class="text-white" href="https://www.iniseg.es/" target="_blank" rel="noopener noreferer">www.iniseg.es</a>
           &copy;
-          Todos los derechos reservados | <span class="year">2024</span>
+          Todos los derechos reservados | <span class="year"></span>
         </p>
       </div>
     </footer>
   </div>
+  <script>
+    let year = new Date().getFullYear()
+    document.querySelector(".year").innerHTML = year
+  </script>
   <script src="js/index.js"></script>
 </body>
 
