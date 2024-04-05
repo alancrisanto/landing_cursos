@@ -1,0 +1,111 @@
+.container-1 {
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  background: rgb(var(--footer-blue));
+  background-image: url("../assets/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  min-height: 375px;
+  padding: 1rem 1rem 2rem 1rem;
+}
+
+.container-1 p:first-child {
+  color: rgb(var(--main-yellow));
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Open Sans;
+  font-size: clamp(1.5rem, 3.5vw, 3.5rem);
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 1.6px;
+}
+
+.container-1 p:nth-child(2) {
+  color: #FFF;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.84px;
+  text-transform: capitalize;
+}
+
+.container-1 a {
+  border-radius: 10px;
+  background-color: rgb(var(--main-yellow));
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 0.5rem 1rem;
+  color: rgb(var(--dark-blue));
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  margin: 1rem 0 0 0;
+  position: relative;
+  overflow: hidden;
+  transition: width 600ms;
+}
+
+.container-1 a::before {
+  position: absolute;
+  content: "";
+  inset: 0 0 0 -2rem;
+  width: 0;
+  height: 100%;
+  background-color: rgb(var(--red));
+  transition: width 600ms;
+  display: block;
+  transform: skewX(45deg);
+  z-index: -1;
+}
+
+
+.container-1 a:hover::before {
+  width: 130%;
+}
+
+.container-1 a:hover {
+  color: white;
+  z-index: 1;
+}
+
+.container-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 2rem 2rem 2rem;
+  margin: 2rem 2rem 2rem 2rem;
+  background-color: rgb(var(--middle-grey));
+}
+
+.container-2 p {
+  text-align: center;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  text-transform: capitalize;
+  padding: 0 0 1rem 0;
+}
+
+.container-2 h1 {
+  font-size: clamp(1.65rem, 2vw, 2.5rem);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.12px;
+  text-transform: capitalize;
+}

@@ -1,0 +1,40 @@
+:root {
+
+  --open-sans: 'Open Sans', sans-serif;
+  --blue: 25, 81, 140;
+  --purple-blue: 34, 43, 63;
+  --main-blue: 25, 81, 140;
+  --dark-blue: 34, 44, 63;
+  --footer-blue: 4, 27, 51;
+  --light-blue: 122, 193, 254;
+  --blue-card: 30, 82, 116;
+  --blue-subMenu: 229, 235, 248;
+  --main-yellow: 251, 192, 9;
+  --dark-yellow: 244, 163, 32;
+  --red: 222, 29, 39;
+  --grey: 245, 243, 243;
+  --middle-grey: 221, 221, 221;
+  --dark-grey: 177, 175, 175;
+  --brillo: 255, 255, 255;
+  --border-color: 0, 0, 0, 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--open-sans);
+}
+
+body {
+  max-width: 2200px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}

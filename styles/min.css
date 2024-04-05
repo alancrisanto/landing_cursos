@@ -117,3 +117,17 @@ footer {
     font-size: clamp(4.35rem, 23vw, 8rem);
   }
 }
+
+@media screen and (min-width:1280px) {
+  .title h1 {
+    font-size: clamp(1.125rem, 5.5vw, 2.5rem);
+  }
+
+  .title h1 .sub-text-1 {
+    font-size: clamp(1.65rem, 8vw, 3.8rem);
+  }
+
+  .title h1 .sub-text-2 {
+    font-size: clamp(4.35rem, 23vw, 10rem);
+  }
+}

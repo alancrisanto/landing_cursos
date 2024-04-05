@@ -1,0 +1,19 @@
+@media screen and (min-width: 1024px) {
+  .container-1 {
+    min-height: 500px;
+  }
+
+  .container-1 p:first-child {
+    max-width: 70%;
+  }
+
+  .container-2 h1 {
+    max-width: 70%;
+  }
+}
+
+@media screen and (min-width:1500px) {
+  .container-1 {
+    min-height: 620px;
+  }
+}
