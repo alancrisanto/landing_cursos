@@ -1,8 +1,6 @@
-.container-1 {
+.wrapper {
   display: flex;
-  gap: 0.5rem;
-  flex-direction: column;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
   background: rgb(var(--footer-blue));
   background-image: url("../assets/banner.png");
@@ -12,6 +10,16 @@
   min-height: 375px;
   padding: 1rem 1rem 2rem 1rem;
 }
+
+.container-1 {
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20vh;
+}
+
 
 .container-1 p:first-child {
   color: rgb(var(--main-yellow));
