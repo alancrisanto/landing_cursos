@@ -1,8 +1,9 @@
 // variables de lazy loading
 
-const cardsContainer = document.querySelector(".cards-container");
+const NebrijaContainer = document.querySelector(".cards-nebrija");
+const inisegContainer = document.querySelector(".cards-iniseg");
 
-let cards = [
+let cardsNebrija = [
 	{
 		id: 1,
 		img: "assets/seguridad-iniseg/curso-superior-de-director-de-seguridad_n.jpg",
@@ -25,8 +26,11 @@ let cards = [
 		institucion: "Nebrija",
 		logo: "assets/logos/nebrija_1.jpg",
 	},
+];
+
+let cardsIniseg = [
 	{
-		id: 3,
+		id: 1,
 		img: "assets/seguridad-iniseg/curso-de-gestion-de-la-seguridad-aeroportuaria_n.jpg",
 		title: "Curso de Gestión de la Seguridad Aeroportuaria",
 		inicio: "Inscripción Abierta",
@@ -37,7 +41,7 @@ let cards = [
 		logo: "assets/logos/recurso_6.png",
 	},
 	{
-		id: 4,
+		id: 2,
 		img: "assets/seguridad-iniseg/curso-de-gestion-de-la-seguridad-en-infraestructuras-hoteleras_n.jpg",
 		title: "Curso de Gestión de la Seguridad en Infraestructuras Hoteleras",
 		inicio: "Inscripción Abierta",
@@ -48,7 +52,7 @@ let cards = [
 		logo: "assets/logos/recurso_6.png",
 	},
 	{
-		id: 5,
+		id: 3,
 		img: "assets/seguridad-iniseg/curso-de-gestion-de-la-seguridad-en-puertos_n.jpg",
 		title: "Curso de Gestión de la Seguridad en Puertos",
 		inicio: "Inscripción Abierta",
@@ -59,7 +63,7 @@ let cards = [
 		logo: "assets/logos/recurso_6.png",
 	},
 	{
-		id: 6,
+		id: 4,
 		img: "assets/seguridad-iniseg/curso-superior-en-cooperacion-policialjudicial-internacional_n.jpg",
 		title: "Curso superior en Cooperación Policial/Judicial Internacional",
 		inicio: "Inscripción Abierta",
@@ -70,7 +74,7 @@ let cards = [
 		logo: "assets/logos/recurso_6.png",
 	},
 	{
-		id: 7,
+		id: 5,
 		img: "assets/seguridad-iniseg/curso-superior-en-delincuencia-organizada_n.jpg",
 		title: "Curso Superior en Delincuencia Organizada",
 		inicio: "Inscripción Abierta",
@@ -81,7 +85,7 @@ let cards = [
 		logo: "assets/logos/recurso_6.png",
 	},
 	{
-		id: 8,
+		id: 6,
 		img: "assets/seguridad-iniseg/curso-superior-en-investigacion-criminal_n.jpg",
 		title: "Curso Superior en Investigación Criminal",
 		inicio: "Inscripción Abierta",
@@ -92,7 +96,7 @@ let cards = [
 		logo: "assets/logos/recurso_6.png",
 	},
 	{
-		id: 9,
+		id: 7,
 		img: "assets/seguridad-iniseg/diplomado-en-reconstruccion-de-investigacion-de-accidentes-de-trafico_n.jpg",
 		title: "Diplomado en Reconstrucción de Investigación de Accidentes de Tráfico",
 		inicio: "Abierta",
@@ -103,7 +107,7 @@ let cards = [
 		logo: "assets/logos/recurso_6.png",
 	},
 	{
-		id: 10,
+		id: 8,
 		img: "assets/seguridad-iniseg/perito-judicial-en-seguridad-privada_n.jpg",
 		title: "Perito Judicial en Seguridad Privada",
 		inicio: "Inscripción Abierta",
@@ -125,9 +129,6 @@ const templateCard = function (lst) {
 							<div class="card-body text-center d-flex flex-column justify-content-between">
 								<h4 class="card-title text-white fs-6">${el.title}</h4>
 								<div class="content-desc">
-                <div>
-                  <img src="${el.logo}" alt="logo ${el.institucion}" style="max-width: 100px">
-                </div>
 									<div class="info d-flex justify-content-between pt-3 pb-2">
 										<p class="text-warning fw-medium">${el.inicio}</p>
 										<p class="text-warning fw-medium">${el.ects} ECTS</p>
@@ -143,7 +144,8 @@ const templateCard = function (lst) {
 	});
 };
 
-cardsContainer.innerHTML = templateCard(cards).join("");
+NebrijaContainer.innerHTML = templateCard(cardsNebrija).join("");
+inisegContainer.innerHTML = templateCard(cardsIniseg).join("");
 
 // ----------------------------------------------------------------------------------------------------------------------------------
 
