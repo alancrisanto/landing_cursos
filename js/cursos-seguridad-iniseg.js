@@ -99,7 +99,7 @@ let cardsIniseg = [
 		id: 7,
 		img: "assets/seguridad-iniseg/diplomado-en-reconstruccion-de-investigacion-de-accidentes-de-trafico_n.jpg",
 		title: "Diplomado en Reconstrucción de Investigación de Accidentes de Tráfico",
-		inicio: "Abierta",
+		inicio: "Inscripción Abierta",
 		ects: 6,
 		duracion: "2 meses",
 		link: "#formulario-becas",
