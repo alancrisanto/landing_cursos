@@ -10,3 +10,15 @@
     object-fit: cover;
   }
 }
+
+
+@media screen and (min-width: 1440px) {
+
+  .container-wrapper {
+    overflow: hidden;
+  }
+
+  .title-wrapper {
+    margin: 0 -100%;
+  }
+}
