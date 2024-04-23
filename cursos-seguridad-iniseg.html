@@ -44,45 +44,11 @@
 </head>
 
 <body>
-  <div class="container-wrapper px-3 pt-4">
+  <div class="container-wrapper">
 
     <head>
-      <div class="container-header">
-        <div class="row p-0 justify-content-center">
-          <div class="desc col-md-7 col-lg-7 col-xl-6">
-            <div class="logos d-flex gap-2 justify-content-between justify-content-md-center align-items-center">
-              <div class="logo">
-                <img src="assets/logos/recurso_6.png" alt="logo en blanco de iniseg">
-              </div>
-              <div class="logo">
-                <img src="assets/logos/Recurso 3.png" alt="logo uinma">
-              </div>
-              <div class="logo">
-                <img src="assets/logos/Recurso 4.png" alt="logo universidad Rey Juan Carlos">
-              </div>
-              <div class="logo">
-                <img src="assets/logos/Recurso 5.png" alt="logo ieji">
-              </div>
-            </div>
-            <div class="title mt-3">
-              <h1 class="fw-semibold text-center">Crece profesionalmente con la <br><span
-                  class="sub-text-1 text-uppercase fw-bolder">mejor
-                  formación</span><br>
-                <span class="sub-text-2 text-uppercase">online</span>
-              </h1>
-              <p class="ps-md-4 pb-4 text-center text-md-start">
-                Cursos Avalados por la <strong class="fst-italic">Universidad Rey Juan Carlos</strong>
-                Créditos ECTS <strong>válidos en todo el Espacio Europeo</strong> de
-                Educación Superior EEES
-              </p>
-            </div>
-          </div>
-          <div class="img-header text-center col-md-5 col-lg-4">
-            <picture>
-              <img src="assets/Recurso-15.webp" alt="mujer joven estudiante con libros en mano">
-            </picture>
-          </div>
-        </div>
+      <div class="container-header-img">
+        <img src="assets/Banner definitivo_Mesa de trabajo 1.jpg" alt="banner cursos de seguridad">
       </div>
       <div class="cinta p-4">
         <h2 class="text-white fst-italic text-center fs-3">Invierte en tu futuro con los mejores programas en Seguridad
@@ -90,18 +56,19 @@
       </div>
     </head>
 
-    <main class="container-xxl mt-5">
+    <main class="container-xxl mt-5 px-3 pt-4">
       <!-- Cards Section -->
       <div class="cards-section">
         <div class="cards-title text-center mb-5 pb-4">
           <h3 class="fs-1 fw-bold">Cursos Universitarios</h3>
-          <!-- <p class="fs-5 fst-italic fw-semibold">Inicio 1 de junio 2024 - 2 Créditos ECTS</p> -->
+          <p class="fs-5 fst-italic fw-semibold card-title-p">Ofrecemos programas de estudios online en Seguridad y
+            Defensa para
+            profesionales, Reconocidos por Universidades y Empresas. ¡Descubre Nuestros Cursos!</p>
         </div>
         <!-- Cards Nebrija -->
         <div class="title-wrapper bg-secondary-subtle p-4">
           <div class="section-nebrija d-flex flex-column gap-3 justify-content-center align-items-center">
-            <h3 class="fs-2  text-center fw-bold">Cursos de Titulación Propia de la
-              Universidad de Nebrija</h3>
+            <h3 class="fs-2  text-center fw-bold">Cursos con Titulación de la Universidad Nebrija</h3>
             <img class="border-3 border-warning border-bottom" src="assets/logos/nebrija.png"
               alt="logo universidad de nebrija">
           </div>
@@ -144,8 +111,7 @@
                 method="post">
 
                 <input type="hidden" value="670" name="id_remitente" id="id_remitente" />
-                <input type="hidden"
-                  value="https://www.iniseg.es/landing-cursos/cursos-universitarios-seguridad-iniseg-gracias.html"
+                <input type="hidden" value="https://www.iniseg.es/landing-cursos/cursos-seguridad-gracias.html"
                   name="redir_peticion_ok" id="redir_peticion_ok" />
                 <input type="hidden" value="https://www.iniseg.es/solicitud-informacion-ko.php"
                   name="redir_peticion_fallo" id="redir_peticion_fallo" />
@@ -221,17 +187,16 @@
                     <select class="section-select input-form" name="id_curso" id="selectCurso"
                       title="maestría a postular">
                       <option value="" class="select-placeholder" selected disabled>Curso de Interés</option>
-                      <option value="12712">Curso Superior de Director de Seguridad</option>
-                      <option value="12721">Diploma Superior Universitario de Detective Privado</option>
-                      <option value="12722">Curso de Gestión de la Seguridad Aeroportuaria</option>
-                      <option value="12725">Curso de Gestión de la Seguridad en Infraestructuras Hoteleras</option>
-                      <option value="12724">Curso de Gestión de la Seguridad en Puertos</option>
-                      <option value="12723">Curso superior en Cooperación Policial/Judicial Internacional</option>
-                      <option value="12728">Curso Superior en Delincuencia Organizada</option>
-                      <option value="12728">Curso Superior en Investigación Criminal</option>
-                      <option value="12728">Diplomado en Reconstrucción de Investigación de Accidentes de Tráfico
-                      </option>
-                      <option value="12728">Perito Judicial en Seguridad Privada</option>
+                      <option value="12670">Curso Superior de Director de Seguridad</option>
+                      <option value="12671">Diploma Superior Universitario de Detective Privado</option>
+                      <option value="12674">Curso de Gestión de la Seguridad Aeroportuaria</option>
+                      <option value="12675">Curso de Gestión de la Seguridad en Infraestructuras Hoteleras</option>
+                      <option value="12669">Curso de Gestión de la Seguridad en Puertos</option>
+                      <option value="12727">Curso Superior en Cooperación Policial/Judicial Internacional</option>
+                      <option value="12676">Curso Superior en Delincuencia Organizada</option>
+                      <option value="12726">Curso Superior en Investigación Criminal</option>
+                      <option value="12672">Curso de Investigación de Accidentes de Tráfico</option>
+                      <option value="12673">Perito Judicial en Seguridad Privada</option>
                     </select>
                   </div>
                   <div>

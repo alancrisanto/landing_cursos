@@ -66,6 +66,10 @@
 /* ---------------------------------------
   CARDS
   ------------------------------------------ */
+.card-title-p {
+  max-width: 1024px;
+  margin: 0 auto !important;
+}
 
 .card {
   overflow: hidden;

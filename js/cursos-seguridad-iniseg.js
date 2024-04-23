@@ -65,7 +65,7 @@ let cardsIniseg = [
 	{
 		id: 4,
 		img: "assets/seguridad-iniseg/curso-superior-en-cooperacion-policialjudicial-internacional_n.jpg",
-		title: "Curso superior en Cooperación Policial/Judicial Internacional",
+		title: "Curso Superior en Cooperación Policial/Judicial Internacional",
 		inicio: "Inscripción Abierta",
 		ects: 12,
 		duracion: "3 meses",
@@ -98,7 +98,7 @@ let cardsIniseg = [
 	{
 		id: 7,
 		img: "assets/seguridad-iniseg/diplomado-en-reconstruccion-de-investigacion-de-accidentes-de-trafico_n.jpg",
-		title: "Diplomado en Reconstrucción de Investigación de Accidentes de Tráfico",
+		title: "Curso de Investigación de Accidentes de Tráfico",
 		inicio: "Inscripción Abierta",
 		ects: 6,
 		duracion: "2 meses",
